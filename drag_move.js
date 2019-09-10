@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  function interactiveImage(pathToImage = 'assets/images/', fileName = 'image.jpg', totalFames = 12, targetedImage = '#move') {
+  function interactiveImage(pathToImage = 'assets/images/', fileName = 'image.jpg', totalFrames = 12, targetedImage = '#move') {
     var frame = 0;
 
     $(targetedImage).on('mousedown touchstart', function(e) {
@@ -10,7 +10,7 @@ $(document).ready(function(){
       function changeFrame(event, frameSpeed) {
         oldY = newY;
         newY = event.pageY || event.originalEvent.touches[0].pageY;
-        if ((frame < totalFames) & (oldY < newY) & (Math.ceil(newY)%frameSpeed == 0)) {
+        if ((frame < totalFrames) & (oldY < newY) & (Math.ceil(newY)%frameSpeed == 0)) {
           frame += 1;
         } else if ((frame > 0) & (oldY > newY) & (Math.ceil(newY)%frameSpeed == 0)) {
           frame -= 1;
