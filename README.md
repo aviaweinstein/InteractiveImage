@@ -26,3 +26,7 @@ The interactiveImage function takes in 4 parameters. All of which have defaults 
 * `fileName` is the name if the images files without the leading number or dash
 * `totalFrames` is the largest number image you have. Remember the numbering starts at 0, so if you have 11 images `totalFrames` should be set to 10
 * `targetedImage` is the id, class, or tag (or some combo of these) that targets the img tag where the images are sourced.
+
+### Example
+
+You can see an example at http://aviaweinstein.github.io/#move
